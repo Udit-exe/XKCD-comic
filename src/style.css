@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+.headings{
+    margin: 20px 0px 0px 10px;
+}
+
+#successMsg{
+    color:limegreen;
+}
+
+#failedMsg{
+    color:crimson;
+}
+
+form{
+    margin-left: 10px;
+}
+
+form input{
+    padding: 4px 6px;
+    margin: 10px 0px 0px;
+}
+
+form button{
+    background-color: cornflowerblue;
+    margin: 10px 10px 10px 0px;
+    padding: 4px 6px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
