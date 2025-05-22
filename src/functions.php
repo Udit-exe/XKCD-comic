@@ -2,6 +2,10 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+require __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 require 'vendor/autoload.php';  // This loads the Composer autoloader
 
@@ -24,8 +28,8 @@ function sendVerificationEmail(string $email, string $code): bool {
       $mail->isSMTP();  
       $mail->Host = 'smtp.gmail.com';  // Gmail SMTP server
       $mail->SMTPAuth = true;  // Enable SMTP authentication
-      $mail->Username = 'agrawaludit31@gmail.com';  // Your Gmail address
-      $mail->Password = 'imod qmqb jrpo vssr';  // Your Gmail app password
+      $mail->Username = $_ENV['GMAIL_USERNAME'];
+      $mail->Password = $_ENV['GMAIL_APP_PASSWORD'];
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // Enable TLS encryption
       $mail->Port = 587;  // SMTP port
 
@@ -117,8 +121,8 @@ function sendXKCDUpdatesToSubscribers(): void {
             $mail->isSMTP();  // using SMTP
             $mail->Host = 'smtp.gmail.com';  // Gmail SMTP server
             $mail->SMTPAuth = true;  // SMTP authentication
-            $mail->Username = 'agrawaludit31@gmail.com';  // Gmail address
-            $mail->Password = 'imod qmqb jrpo vssr';  // Gmail app password
+            $mail->Username = $_ENV['GMAIL_USERNAME'];
+            $mail->Password = $_ENV['GMAIL_APP_PASSWORD'];
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // Enable TLS encryption
             $mail->Port = 587;  // SMTP port
 
