@@ -97,8 +97,6 @@ src/.env
 ---
 
 ## Sample Emails
-<span style="width: 300px; ">
-![image](https://github.com/user-attachments/assets/47201f09-b2d0-410a-95bb-0a039037ba59)
-![image](https://github.com/user-attachments/assets/899d06ae-9d54-423c-a1be-99e20bb43f65)
-</span>
+<img src="https://github.com/user-attachments/assets/899d06ae-9d54-423c-a1be-99e20bb43f65" width="300" />
+<img src="[https://github.com/user-attachments/assets/47201f09-b2d0-410a-95bb-0a039037ba59" width="300" />
 
