@@ -98,6 +98,5 @@ src/.env
 
 ## Sample Emails
 <img src="https://github.com/user-attachments/assets/899d06ae-9d54-423c-a1be-99e20bb43f65" width="300" />
-<br>
-<img src="[https://github.com/user-attachments/assets/47201f09-b2d0-410a-95bb-0a039037ba59" width="300" />
+<img src="https://github.com/user-attachments/assets/47201f09-b2d0-410a-95bb-0a039037ba59" width="300" />
 
